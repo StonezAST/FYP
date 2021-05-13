@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+		<title>Browse</title>
+		<link rel="Stylesheet" type="text/css" href="Stylesheet.css">
+	</head>
+
+	<body onload="connect()">
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="New Music.html">New UK Rap</a>
+			<a href="UK Trap.html">Trap</a>
+			<a href="Afroswing.html">AfroSwing</a>
+			<a href="UK Drill.html">Drill</a>
+			<a href="Garage.html">Garage</a>
+			<a href="Christian.html">Christian</a>
+		</div>
+
+	<div class="wrapper">
+		<br>
+		Browse Through the different genres of UK Rap below!
+		<br><br>
+
+		<div class="Light">
+			UK Trap. The UK Trap scene is the home of some of the UK's biggest artist. Artist
+			Include D-Block Europe, Satan Dave and M-Huncho.<br><br>
+
+			<button onclick="Ferrari()">D-Block Europe - Ferrari Horses</button><br>
+			<button onclick="Titanium()">Santan Dave - Titanium</button><br>
+		</div>
+
+		<div class="Dark">
+			UK AfroSwing. This sub genre of UK rap which was developed in the 2010s
+			and was inspired from the the genres dancehall, afrobeats and hip hop. Notable artist of this sub
+			genre are Acen, Not3s and NSG.<br><br>
+
+			<button onclick="Rover()">S1mba - Rover (Remix) (ft. Poundz, ZieZie & Ivorian Doll)</button><br>
+			<button onclick="Rush()">Young T & Bugsey - Don't Rush (ft. Headie One)</button><br>
+		</div>
+
+		<div class="Light">
+			UK Drill. UK Drill was inspired from the Chicago Drill scene and originated in the Brixton
+			distrcit in South London. Notable UK Drill acts are 67, Harlem Spartans and CB (7th). <br><br>
+
+			<button onclick="CB()">CB (7th) - Take That Risk</button><br>
+			<button onclick="OFB()">OFB - Ambush</button><br>
+		</div>
+
+		<div class="Dark">
+			UK Garage. This genre is an electronic dance genre which orignated in the 90s. Garage tracks
+			usually include chopped up vocals. Notable Garage acts are So Solid Crew, Flava D and Wiley.<br><br>
+
+			<button onclick="West()">AJ Tracy & Mabel - West Ten</button><br>
+			<button onclick="Mind()">Jorja Smith - On My Mind</button><br>
+		</div>
+
+		<div class="Light">
+			UK Christian Rap. UK Christian Rap is not bigger enough to have sub genres inside. Christian
+			Rap is rapping across all type of UK rap beats. The artist rapping however is usually rapping
+			about a christian topic.<br><br>
+
+			<button onclick="Handy()">Nos x GK Moe - Handy</button><br>
+			<button onclick="Flavour()">GK Moe x Nos x FT - Flavour</button><br>
+			<br><br><br><br><br><br><br><br>
+		</div>
+		<div id="Player">
+			<div class="row">
+				<img id="Cover" style="width:30%"><br>
+			</div>
+			<div class="row">
+				<p style="font-size: 1.5vw;"><b>Currently Playing:</b></p>
+				<p style="font-size: 1.5vw;" id="Name"></p>
+			</div>
+			<br>
+			<img class="control" src="Images/Play.png" style="width:4%"
+				 onclick="playAudio()">
+			<img class="control" src="Images/Pause.png" style="width:4%" onclick="pauseAudio()">
+		</div>
+	</div>
+
+		<script src="Home.js"></script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Garamond;
+    background-color: #c4dcd8;
+    text-align:center;
+}
+
+.wrapper {
+    position: absolute;
+    left: 10%;
+}
+.header {
+    text-align: center;
+    width: 100%;
+    background: #04ffdb;
+    margin-bottom: 0.5%;
+}
+
+@media screen and (max-width: 100%) {
+    body {
+        background-color: #c4dcd8;
+    }
+}
+.topnav {
+    overflow: hidden;
+    background-color: #056b5c;
+    border-radius: 7px;
+    text-align: center;
+    left: 0.1%;
+    width: 9%;
+    position: fixed;
+    z-index: 1;
+    padding: 0.2%;
+    border: 2px solid black;
+    font-size: 1.2vw;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 20%;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color:  #62716e;
+    color: white;
+ }
+
+.Light {
+    background-color: #eafdfa;
+    padding:2%;
+}
+
+.Dark {
+    background-color: #70ccbc;
+    padding: 2%;
+}
+
+#Player {
+    background-color: #056b5c;
+    padding: 0.5%;
+    width: 100%;
+    text-align:center;
+    position: fixed;
+    bottom: 0.1%;
+    right: -1%;
+    border: 2px solid black;
+}
+.row {
+    float: left;
+    width: 32%;
+    bottom: 200px;
+    text-align:center;
+}
+button {
+    background-color: #c4dcd8;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family: Garamond;
+    cursor: pointer;
+}
+.control {
+    cursor: pointer;
+}

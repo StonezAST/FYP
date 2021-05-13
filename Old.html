@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+		<title>Browse</title>
+		<link rel="Stylesheet" type="text/css" href="Stylesheet.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+			</div>
+		</div>
+		<div class="topnav">
+			<a href="Homepage.php">Home</a>
+			<a href="Browse.html">Browse</a>
+			<a href="Results.php">Log In</a>
+			<a href="loginForm.php">Sign Up</a>
+		</div>
+
+
+		<div class="Player">
+			<img id="Cover" src="pic_bulboff.gif" style="width:100px">
+			<p>Currently Playing:</p>
+			<p id="Name"></p>
+		</div>
+
+		<br>
+		Browse Through the different genres of UK Rap below!
+		<br><br>
+
+
+		<div class="Light">
+			UK Trap. The UK Trap scene is the home of some of the UK's biggest artist. Artist
+			Include D-Block Europe, Satan Dave and M-Huncho.<br>
+
+			<button onclick="DBE()">Ferrari Horses</button><br>
+
+			<figure>
+				<figcaption>D-Block Europe - Ferrari Horses</figcaption>
+				<audio controls
+					   src="Audio/Ferrari Horses.mp3">
+				</audio>
+				<figcaption><br>Santan Dave - Titanium</figcaption>
+				<audio controls
+					   src="Audio/Titanium.mp3">
+				</audio>
+			</figure>
+		</div>
+
+		<div class="Dark">
+			UK AfroSwing. This sub genre of UK rap which was developed in the 2010s
+			and was inspired from the the genres dancehall, afrobeats and hip hop. Notable artist of this sub
+			genre are Acen, Not3s and NSG.
+			<figure>
+				<figcaption>Rover (Remix)(ft. Poundz, ZieZie & Ivorian Doll)</figcaption>
+				<audio controls
+					   src="Audio/Rover (Remix) (ft. Poundz, ZieZie & Ivorian Doll).mp3">
+				</audio>
+
+				<figcaption><br>Young T & Bugsey - Don't Rush (ft. Headie One)</figcaption>
+				<audio controls
+					   src="Audio/Don't Rush ft. Headie One.mp3">
+				</audio>
+			</figure>
+			<img src="Images/Afroswing.png" alt="AfroSwing">
+		</div>
+
+		<div class="Light">
+			UK Drill. UK Drill was inspired from the Chicago Drill scene and originated in the Brixton
+			distrcit in South London. Notable UK Drill acts are 67, Harlem Spartans and CB (7th).
+			<figure>
+				<figcaption>Karma - Rnr</figcaption>
+				<audio controls
+					   src="Audio/RNR.mp3">
+				</audio>
+				<figcaption><br>OFB - Ambush</figcaption>
+				<audio controls
+					   src="Audio/Ambush.mp3">
+				</audio>
+			</figure>
+		</div>
+
+		<div class="Dark">
+			UK Garage. This genre is an electronic dance genre which orignated in the 90s. Garage tracks
+			usually include chopped up vocals. Notable Garage acts are So Solid Crew, Flava D and Wiley.
+			<figure>
+				<figcaption>AJ & Mabel - West Ten</figcaption>
+				<audio controls
+					   src="Audio/West Ten.mp3">
+				</audio>
+				<figcaption><br>Jorja Smith x Preditah - On My Mind</figcaption>
+				<audio controls
+					   src="Audio/On My Mind.mp3">
+				</audio>
+			</figure>
+		</div>
+
+		<div class="Light">
+			UK Christian Rap. UK Christian Rap is not bigger enough to have sub genres inside. Christian
+			Rap is rapping across all type of UK rap beats. The artist rapping however is usually rapping
+			about a christian topic.
+			<figure>
+				<figcaption>Nos x GK Moe - Handy</figcaption>
+				<audio controls
+					   src="Audio/Handy.mp3">
+				</audio>
+				<figcaption><br>GK Moe x Nos x FT - Flavour</figcaption>
+				<audio controls
+					   src="Audio/Flavour.mp3">
+				</audio>
+			</figure>
+		</div>
+
+		<script>
+			var current = document.getElementById("myAudio");
+			var img = document.getElementById("Cover");
+
+			var Trap = [						//Trap Songs
+				"Audio/Ferrari Horses.mp3",
+				"Audio/Titanium.mp3",
+			];
+
+			function DBE() {
+				var audio = new Audio(Trap[0]);
+				audio.play();
+				img.src = 'Images/DBE.jpg';
+				document.getElementById("Name").innerHTML = "D-Block Europe - Ferrari Horses";
+			}
+			function Titanium() {
+				var audio = new Audio(Trap[1]);
+				audio.play();
+				img.src = 'Images/Titanium.png';
+				document.getElementById("Name").innerHTML = "Santan Dave - Titanium";
+			}
+
+		</script>
+	</body>
+</html>

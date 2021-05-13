@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UK Drill</title>
+	<link rel="Stylesheet" type="text/css" href="Stylesheet.css">
+</head>
+
+<body onload="connect()">
+	<div class="topnav">
+		<a href="Home.html">Home</a>
+		<a href="New Music.html">New UK Rap</a>
+		<a href="UK Trap.html">Trap</a>
+		<a href="Afroswing.html">AfroSwing</a>
+		<a href="UK Drill.html">Drill</a>
+		<a href="Garage.html">Garage</a>
+		<a href="Christian.html">Christian</a>
+	</div>
+	<br>
+
+<div class="wrapper">
+
+	<div class="Dark">
+		Listen To UK Drill. Cover Artist: Digga D. <br><br>
+		<img class="control" src="Images/Digga D.png" style="width:20%" onclick="DMix()" />
+	</div>
+
+	<div id="Player">
+		<div class="row">
+			<img id="Cover" style="width:30%"><br>
+		</div>
+		<div class="row">
+			<p style="font-size: 1.5vw;"><b>Currently Playing:</b></p>
+			<p style="font-size: 1.5vw;" id="Name"></p>
+		</div>
+		<br>
+		<img class="control" src="Images/Play.png" style="width:4%"
+			 onclick="playAudio()">
+		<img class="control" src="Images/Pause.png" style="width:4%" onclick="pauseAudio()">
+		<img class="control" src="Images/Skip.png" style="width:4.2%" onclick="Next()">
+	</div>
+</div>
+	<script src="UK Drill.js"></script>
+</body>
+</html>
